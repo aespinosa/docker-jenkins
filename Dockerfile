@@ -1,4 +1,4 @@
-FROM base
+FROM ubuntu
 MAINTAINER Allan Espinosa "allan.espinosa@outlook.com"
 
 RUN apt-get update
