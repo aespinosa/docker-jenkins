@@ -35,7 +35,8 @@ docker pull aespinosa/jenkins
 
 ## Author
 
-Allan Espinosa (<allan.espinosa@outlook.com>)
+  * Allan Espinosa (<allan.espinosa@outlook.com>)
+  * Gwenn Etourneau
 
 ## LICENSE
 
