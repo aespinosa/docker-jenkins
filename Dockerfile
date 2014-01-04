@@ -1,10 +1,13 @@
-FROM ubuntu
+FROM ubuntu:12.04
 MAINTAINER Allan Espinosa "allan.espinosa@outlook.com"
 
 RUN echo deb http://archive.ubuntu.com/ubuntu precise universe >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -q -y openjdk-7-jre-headless
-ADD http://mirrors.jenkins-ci.org/war/latest/jenkins.war /root/jenkins.war
+ADD http://mirrors.jenkins-ci.org/war/1.545/jenkins.war /opt/jenkins.war
+ADD run /usr/local/bin/run
+RUN useradd -m jenkins
 
 EXPOSE 8080
-CMD ["java", "-jar", "/root/jenkins.war"]
+VOLUME ["/home/jenkins/.jenkins"]
+CMD /usr/local/bin/run
