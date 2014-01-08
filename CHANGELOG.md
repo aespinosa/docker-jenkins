@@ -1,3 +1,8 @@
+## 0.3.1
+  * Upgrade to Jenkins 1.546
+  * Fix permissions when running the container
+  * Decrease build size of layers
+
 ## 0.3.0
 
   * Fix Jenkins and Ubuntu versions (c/o @bfirsh)
