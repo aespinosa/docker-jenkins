@@ -1,3 +1,8 @@
+## 0.4.0
+  * Upgrade to Jenkins 1.551
+  * Simplify exposed volume to /jenkins
+  * Revert to running jenkins as root
+
 ## 0.3.1
   * Upgrade to Jenkins 1.546
   * Fix permissions when running the container
