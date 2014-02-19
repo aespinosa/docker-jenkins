@@ -1,3 +1,0 @@
-#!/bin/bash
-chown jenkins /home/jenkins/.jenkins
-exec su jenkins -c "java -jar /opt/jenkins.war"
