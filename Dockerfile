@@ -9,5 +9,4 @@ ENV JENKINS_HOME /jenkins
 
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080
-VOLUME ["/jenkins"]
 CMD [""]
