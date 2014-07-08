@@ -36,7 +36,7 @@ A prebuilt container is also available in the docker index
 ## Author
 
   * Allan Espinosa (<allan.espinosa@outlook.com>)
-  * Gwenn Etourneau
+  * Gwenn Etourneau (<g.etourneau@free.fr>)
 
 ## LICENSE
 
