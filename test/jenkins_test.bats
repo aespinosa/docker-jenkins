@@ -21,7 +21,7 @@ EOF
   (
   cd $jenkins_dir
   tar -c jobs/*/config.xml | docker run -a stdin -i \
-    --volumes-from $data_container --name $BATS_TEST_NAME busybox tar -xC /jenkins
+    --volumes-from $data_container --rm=true busybox tar -xC /jenkins
   )
   # launch the container
   docker run --volumes-from $data_container -d --name $jenkins_container aespinosa/jenkins
@@ -34,7 +34,7 @@ EOF
   run curl -s $url
 
   # cleanup
-  docker rm -f $BATS_TEST_NAME $data_container $jenkins_container
+  docker rm -f $data_container $jenkins_container
 
   # Assert
   [ "$output" = "`cat $job_dir/config.xml`" ]
