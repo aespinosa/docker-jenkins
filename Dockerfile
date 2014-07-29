@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM stackbrew/ubuntu:14.04
 MAINTAINER Allan Espinosa "allan.espinosa@outlook.com"
 
 RUN apt-get update && apt-get clean
