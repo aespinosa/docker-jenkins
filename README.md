@@ -40,7 +40,7 @@ A prebuilt container is also available in the docker index
 
 ## LICENSE
 
-Copyright 2013-2015 Allan Espinosa
+Copyright 2013-2016 Allan Espinosa
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
