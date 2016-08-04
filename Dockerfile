@@ -4,7 +4,7 @@ MAINTAINER Allan Espinosa "allan.espinosa@outlook.com"
 RUN apt-get update && \
     apt-get --no-install-recommends install -q -y openjdk-7-jre-headless && \
     rm -rf /var/lib/apt/lists/*
-ADD http://mirrors.jenkins-ci.org/war/2.10/jenkins.war /opt/jenkins.war
+ADD http://mirrors.jenkins-ci.org/war/2.11/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 ENV JENKINS_HOME /jenkins
 
