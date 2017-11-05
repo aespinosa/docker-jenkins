@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get --no-install-recommends install -q -y openjdk-8-jre-headless && \
     rm -rf /var/lib/apt/lists/*
     
-ADD http://mirrors.jenkins-ci.org/war/2.86/jenkins.war /opt/jenkins.war
+ADD http://mirrors.jenkins-ci.org/war/2.87/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 ENV JENKINS_HOME /jenkins
 
